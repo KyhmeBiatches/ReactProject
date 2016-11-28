@@ -1,0 +1,103 @@
+﻿@using System.Security.Policy
+@using System.Web.Optimization
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello React</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="@Url.Content("~" +
+                                              "/css/site.css")"/>
+</head>
+<body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header col-md-2">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("FestivalStuff", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="col-md-8">
+                <form class="navbar-form flexbox">
+                    <div class="stretch">
+                        <input type="search" class="form-control search-field" placeholder="Search" />
+                    </div>
+                    <div class="normal">
+                        <button type="submit" class="btn btn-default menu-button">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2">
+            </div>
+        </div>
+    </div>
+    <div class="container content-background">
+        <div id="left-container" class="col-md-2">
+
+        </div>
+        <div id="content" class="body-content col-md-8">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+
+        <div id="right-container" class="col-md-2">
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
+
+<script type="text/babel" src="@Url.Content("~/js/Components/Common/ToggleArrow.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Location/LocationList.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Location/LocationFromForm.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Location/LocationPostalForm.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Location/LocationToggle.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Price/PriceList.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Price/PriceForm.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Price/PriceToggle.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Delivery/DeliveryList.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Delivery/DeliveryToggle.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Type/TypeList.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Components/Filter/Type/TypeToggle.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Containers/Filter/LocationBox.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Containers/Filter/CategoryBox.jsx")">
+    </script>
+<script type="text/babel" src="@Url.Content("~/js/Containers/Filter/DeliveryBox.jsx")">
+    </script>
+    <script type="text/babel" src="@Url.Content("~/js/Containers/Filter/PriceBox.jsx")">
+    </script>
+    <script type="text/babel" src="@Url.Content("~/js/Containers/Filter/TypeBox.jsx")">
+    </script>
+<script src="@Url.Content("~/js/Containers/Filter/FilterBox.jsx")"></script>
+
+<script src="@Url.Content("~/js/tutorial.jsx")"></script> 
+
+</body>
+</html>

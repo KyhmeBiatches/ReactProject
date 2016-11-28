@@ -3,36 +3,121 @@
     padding-bottom: 20px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
+/* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+.flexbox {
+    display: flex;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"]
-{
+.flexbox .stretch {
+    flex: 1;
+}
+
+.flexbox .normal {
+    flex: 0;
+}
+
+.menu-button {
+    background-color: #ED7303;
+    color: #ffffff;
+    border-color: #d35400;
+}
+
+.menu-button:hover {
+    background-color: #d35400;
+    color: #ffffff;
+}
+
+.content-background {
+    margin-top: 10px;
+}
+
+.search-form {
     width: 100%;
 }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-  /* Hide captions */
-  .carousel-caption {
-    display: none
-  }
+.search-field {
+    width: 100%;
+}
+
+.search-button {
+    width: 11%;
+}
+
+.panel {
+    padding: 10px;
+}
+
+.create-comment-btn {
+    float: right;
+    margin: 10px;
+}
+
+hr {
+    margin: 10px;
+}
+
+.arrow {
+    height: 12px;
+    width: 12px;
+    
+    margin-top: 14px;
+    
+    transform: rotate(270deg);
+}
+
+.arrow:hover{
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+}
+
+.arrow-down {
+    height: 12px;
+    width: 12px;
+    
+    margin-top: 14px;
+    
+    transform: rotate(180deg);
+}
+
+.arrow-down:hover{
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+}
+
+.location-field {
+    width: 75px;
+}
+
+.form-input {
+    padding: 0;
+}
+
+.panel {
+    padding-bottom: 10px;
+}
+
+.locaiton-btn {
+    width: 75%;
+    margin-top: 10px;
 }
