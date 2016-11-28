@@ -7,7 +7,7 @@ class FilterBox extends React.Component {
     
     render() {
         return(
-            <div>
+            <div className="panel panel-default">
                 <h1> TEST </h1>
                 <hr></hr>
                 <CategoryBox isHidden={'false'}/>

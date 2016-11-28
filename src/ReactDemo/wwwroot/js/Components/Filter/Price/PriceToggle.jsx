@@ -5,9 +5,8 @@ class PriceToggle extends React.Component {
             <div>
                 <PriceForm />
             </div>
-        )
+        );
     }
-    
     
 }
 

@@ -31,9 +31,6 @@ class DeliveryBox extends React.Component {
     _toggleBtn() {
         this.setState({isHidden: !this.state.isHidden})
     }
-    
-
-
 
 }
 

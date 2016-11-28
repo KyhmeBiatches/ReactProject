@@ -18,6 +18,7 @@
 /// <reference path="js/containers/filter/locationbox.js" />
 /// <reference path="js/containers/filter/pricebox.js" />
 /// <reference path="js/containers/filter/typebox.js" />
+/// <reference path="js/filter.js" />
 /// <reference path="js/site.js" />
 /// <reference path="lib/bootstrap/dist/js/bootstrap.js" />
 /// <reference path="lib/jquery/dist/jquery.js" />

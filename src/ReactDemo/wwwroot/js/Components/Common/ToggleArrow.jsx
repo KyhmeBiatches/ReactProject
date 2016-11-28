@@ -6,7 +6,7 @@ class ToggleArrow extends React.Component {
     
     render() {
         return ( 
-            <img src="Resources/Arrow.svg" className={this._arrowDirection()} onClick={this._toggleBtn.bind(this)}></img>
+            <img src="~/images/Arrow.svg" className={this._arrowDirection()} onClick={this._toggleBtn.bind(this)}></img>
         )
     }
     

@@ -35,3 +35,5 @@ class CategoryBox extends React.Component {
 
 }
 
+window.CategoryBox = CategoryBox;
+

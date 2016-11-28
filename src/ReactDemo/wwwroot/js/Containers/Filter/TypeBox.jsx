@@ -32,8 +32,6 @@ class TypeBox extends React.Component {
     }
     
 
-
-
 }
 
 window.TypeBox = TypeBox;

@@ -35,6 +35,10 @@ textarea {
     flex: 0;
 }
 
+#left-container {
+    margin-top: 56px;
+}
+
 .menu-button {
     background-color: #ED7303;
     color: #ffffff;
@@ -67,7 +71,7 @@ textarea {
 }
 
 .create-comment-btn {
-    float: right;
+    float: none;
     margin: 10px;
 }
 
