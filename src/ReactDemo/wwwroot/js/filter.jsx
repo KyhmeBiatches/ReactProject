@@ -144,7 +144,7 @@ class PriceForm extends React.Component {
         return (
             <form id="price-form" className="form-group clearfix" onSubmit={this._handleClick.bind(this)}>
                 <div className="form-input col-md-6">
-                    <input id="price-input" type="text" placeholder="km" className="form-control"></input>
+                    <input id="price-input" type="text" placeholder="kr" className="form-control"></input>
                 </div>
                 <div className="col-md-6">
                     <input id="price-btn" className="btn btn-default form-control" type="submit" value="Vis"></input>
