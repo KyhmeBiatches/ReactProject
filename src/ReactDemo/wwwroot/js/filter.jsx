@@ -426,7 +426,7 @@ class FilterBox extends React.Component {
                 <hr></hr>
                 <CategoryBox isHidden={'false'} />
                 <LocationBox isHidden={'false'} />
-                <PriceBox isHidden={'false'} />
+                <PriceBox  />
                 <DeliveryBox isHidden={'false'} />
                 <TypeBox isHidden={'false'} />
             </div>
